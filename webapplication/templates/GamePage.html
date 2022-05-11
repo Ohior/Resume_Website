@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/game.css' %}">
+<div class="container">
+    <div id="game">
+        <div id="character">
+        </div>
+    </div>
+    <h3 id="score">Click Enter / Return to start</h3>
+    <!-- <h3 class="text-right">High Score: {{game.score}}</h3> -->
+</div>
+
+<script src="{% static 'js/game.js' %}"></script>
+{% endblock content %}

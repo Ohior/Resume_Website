@@ -1,0 +1,223 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <br>
+    <div class="row p-md-5">
+        <div class="col">
+            <div class="mt-5">
+                <!-- <div class="text"> -->
+                <div>
+                    <span class="subheading">Hello!</span>
+                    <h1 class="mb-4 mt-6 text-white">I'm <span class="text-uppercase fs-1 fw-bolder"
+                            id="brown-fa">Aigboje Ohiorenua</span></h1>
+                    <h2 class="mb-4 text-white">A Freelance Developer</h2>
+                    <p>
+                        <a href="#" class="btn rounded-pill px-5 py-3" id="brown-ba">Hire me</a>
+                        <a href="{% static 'doc/cv.pdf' %}" class="btn rounded-pill px-5 py-3" id="brown-ba">My CV</a>
+                    </p>
+                    <p class="mx-auto" style="width: 250px;">
+                        <!-- <a href="#contact-form" class="btn rounded-pill btn-outline-danger" >Contact</a> -->
+                        <a href="/resume/#contact-form" class="btn rounded-pill btn-outline-danger" >Contact</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <img src="{% static 'images/profile.png' %}" alt="" width="500" height="500">
+        </div>
+    </div>
+    <hr class="w-auto text-black-50">
+
+    <section>
+        <div class="row">
+            <div class="col">
+                <!-- <div class="img-about img d-flex align-items-stretch"> -->
+                <div>
+                    <div class="overlay"></div>
+                    <img src="{% static 'images/secprofile.png' %}" alt="">
+                    <!-- <img src="{% static 'images/secprofile.png' %}" alt="" width="400" height="400"> -->
+                    <!-- <div class="img d-flex align-self-stretch align-items-center" style="background-image:url({images/bg_1.png});"> -->
+                    <div></div>
+                </div>
+            </div>
+            <div class="col text-center text-white">
+                <div class="row justify-content-start pb-3">
+                    <div class="col-md-12 heading-section ftco-animate">
+                        <h1 class="text-center shadow-text">About</h1>
+                        <div class="row py-5">
+                            <strong class="col-4 d-flex">Name: </strong>
+                            <p class="col-8">Aigboje Ohiorenua</p>
+                            <strong class="col-4 d-flex">Date of Birth: </strong>
+                            <p class="col-8">22 of March 1995</p>
+                            <strong class="col-4 d-flex">Address: </strong>
+                            <p class="col-8">Benin City, Edo State, Nigeria Country, Africa Continent,
+                                Earth Planet, Sol System, Milky-way Galaxy, Local Group, Virgo Cluster,
+                                Laniakea Supercluster, Universe, Nothingness</p>
+                            <strong class="col-4 d-flex">Email: </strong>
+                            <p class="col-8">aigbojeohiorenua@gmail.com</p>
+                            <strong class="col-4 d-flex">Phone: </strong>
+                            <p class="col-8">08136503858 (+234)</p>
+                            <strong class="col-4 d-flex">Zip Code: </strong>
+                            <p class="col-8">300241</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="w-auto text-black-50">
+
+    <section>
+        <div class="row justify-content-center pb-5">
+            <h1 class="shadow-text text-center">Project</h1>
+        </div>
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col box">
+                    <a href="https://github.com/Ohior/Django-Vue_Ecommerce_Website">
+                        <h1>E-Commerce</h1>
+                        <span>This is an E-Commerce website made with VUE and Django</span>
+                        <img class="thumbnail" src="{% static 'images/ecom.png' %}" alt="e-commerce">
+                    </a>
+                </div>
+                <div class="col box">
+                    <a href="https://github.com/Ohior/MobileChatApp_skeletal">
+                        <h2>Mobile Messenger</h2>
+                        <span>A messenger mobile application made with Kotlin and Firebase </span>
+                        <img class="thumbnail" src="{% static 'images/chat.png' %}" alt="chat" height="50">
+                    </a>
+                </div>
+                <div class="col box">
+                    <a href="https://github.com/Ohior/Mobile_Grocery_mobile_app">
+                        <h2>Grocery Application</h2>
+                        <span>A Grocery application for mobile devices "market on hour hand"</span>
+                        <img class="thumbnail" src="{% static 'images/grocery.png' %}" alt="chat" height="50">
+                    </a>
+                </div>
+            </div><br>
+            <div class="row gx-5">
+                <!-- <div class="row "> -->
+                <div class="col box">
+                    <a href="https://github.com/Ohior/Unity_Endless_runner2d">
+                        <h1>Unity</h1>
+                        <span>A unity Endless running game was one of my project when exploring Unity</span>
+                        <img class="thumbnail" src="{% static 'images/unityimg.png' %}" alt="e-commerce">
+                    </a>
+                </div>
+                <div class="col box">
+                    <a href="https://github.com/Ohior/parchment2-0">
+                        <h2>Alarm Manager</h2>
+                        <span>Well i did not just make an Alarm app, I added Todo and Text Editor </span>
+                        <img class="thumbnail" src="{% static 'images/alarm.png' %}" alt="chat" height="50">
+                    </a>
+                </div>
+            </div><br>
+        </div>
+    </section>
+    <hr class="w-auto text-black-50">
+
+    <section class="ftco-section" id="services-section">
+        <div class="row justify-content-center pb-5">
+            <h1 class="shadow-text text-center">Skills</h1>
+        </div>
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col box">
+                    <!-- <a href=""> -->
+                    <div class="img-container">
+                        <span><img class="icon" src="{% static 'images/webicon.png' %}"></span>
+                        <div class="desc">
+                            <a style="text-decoration: none;">Web Design</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+                <div class="col  box">
+                    <!-- <a href=""> -->
+                    <div class="img-container">
+                        <span><img class="icon" src="{% static 'images/mobile.png' %}"></span>
+                        <div class="desc">
+                            <a style="text-decoration: none;">Mobile Development</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+                <div class="col box">
+                    <!-- <a href=""> -->
+                    <div class="img-container">
+                        <span><img class="icon" src="{% static 'images/unity.png' %}"></span>
+                        <div class="desc">
+                            <a style="text-decoration: none;">Unity Development</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col box">
+                    <!-- <a href=""> -->
+                    <div class="img-container">
+                        <span><img class="icon" src="{% static 'images/webdev.png' %}"></span>
+                        <div class="desc">
+                            <a style="text-decoration: none;">Web Development</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+                <div class="col  box">
+                    <!-- <a href=""> -->
+                    <div class="img-container">
+                        <span><img class="icon" src="{% static 'images/editing.png' %}"></span>
+                        <div class="desc">
+                            <a style="text-decoration: none;">Image & Video Editing</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+                <div class="col box">
+                    <!-- <a href=""> -->
+                    <div class="img-container">
+                        <span><img class="icon" src="{% static 'images/brand.png' %}"></span>
+                        <div class="desc">
+                            <a style="text-decoration: none;">Branding</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="w-auto text-black-50">
+
+    <section id="contact-form">
+        <!-- <form action="" method="post"> -->
+        <form action="" method="post" class="p-5 bg-dark">
+            <h2 class="text-center">Message Me</h2>
+            <div class="form-group">
+                <label for="name">Name *</label>
+                {{form.name}}
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                {{form.email}}
+            </div>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                {{form.message}}
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Send" class="btn-outline-warning py-3 px-4 rounded-pill" id="submit-btn">
+            </div>
+            {% csrf_token %}
+        </form>
+    </section>
+</div>
+{% endblock content %}

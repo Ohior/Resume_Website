@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<div class="py-md-5">
+    <br>
+    <div class="card border-dark mb-3 bg-secondary" style="max-width: 100%;">
+        <div class="card-header bg-black" style="height: 10rem;">
+            <div class="text-center py-5">
+                <!-- Post title-->
+                <h1 class="fw-bolder mb-1">Welcome to my Blog</h1>
+            </div>
+        </div>
+        <div class="card-body text-dark">
+
+            <div class="bg-light p-5 rounded">
+                <h1>Market Qube</h1>
+                <div class="row gx-5">
+                    <div class="col box text-center">
+                        <video width="320" height="240" controls autoplay muted>
+                            <source src="{% static 'others/user.mp4' %}">
+                        </video>
+                    </div>
+                    <div class="col box text-center">
+                        <video width="320" height="240" controls autoplay muted>
+                            <source src="{% static 'others/chat2.mp4' %}">
+                        </video>
+                    </div>
+                </div>
+                <p class="lead">
+                    This is a market place app I created to help customers locate vendor. The app behaves as a market place,
+                    where customer find seller and chat with them. with this app you can find the 
+                    closest store in your area with what you need.
+                </p>
+                <!-- <a class="btn btn-lg btn-primary" href="#" role="button">
+                    <button type="button">Download</button>
+                </a> -->
+                <a class="btn btn-lg btn-primary" href="{% static 'others/MarketQube.apk' %}" download="MarketQube">
+                    <button class="btn-outline-secondary" type="button">Download</button>
+                </a>
+              </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

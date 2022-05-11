@@ -1,0 +1,88 @@
+
+.color-dark{
+	background-color: #1e1515;
+}
+body{
+	background-color: #5f4930;
+	color:white;
+}
+/* for all devices */
+/* .page-header { */
+	/* nav height */
+    /* padding-top: 80px; 
+  }
+  .sticky-nav {
+      position:fixed;
+      top:0;
+      width: 100%;
+      z-index: 99999999;
+  } */
+
+/* for only desktop */
+@media (min-width: 768px) {
+	.page-header {
+	  padding-top: 80px; /* nav height */
+	}
+	.sticky-nav {
+		position:fixed;
+		top:0;
+		width: 100%;
+		z-index: 99999999;
+	}
+  }
+
+#brown-fa{
+	  color: #B5A642;
+  }
+#brown-ba{
+	  background-color: #B5A642;
+  }
+.shadow-text {
+	text-shadow: 3px 3px 9px #B5A642;
+	font-size: 75px;
+}
+.thumbnail{
+	/* display: block; */
+    width: 100%;
+    height: 200px;
+}
+.box{
+	box-sizing: border-box;
+	background-color: rgb(53, 46, 46);
+	border: 5px solid transparent;
+	padding: 5px;
+	margin: 5px;
+	display: block;
+	/* background-clip:padding-box; */
+  }
+.icon{
+	height:20%;
+	width:20%;
+}
+.img-container {
+	text-align: center;
+}
+.r-link-line{
+	text-decoration: none;
+}
+#id_name{
+	width: 100%
+}
+#id_email{
+	width: 100%
+}
+#id_message{
+	width: 100%
+}
+#submit-btn{
+	width: 25%;
+	background-color: brown;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #967d2a;
+    text-decoration: underline;
+}
